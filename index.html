@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <link rel="icon" href="minesweeperfavicon.ico" type="x:image">
+    <title>Minesweeper</title>
+  </head>
+ <body>
+   <canvas width="400" height="70" id="uiCanvas"></canvas>
+   <canvas width="400" height="400" id="mainCanvas"></canvas>
+   <!-- Size and Mine Count Inputs -->
+   <br>
+   <label class="initInputs" for="sizeInput">Size:</label>
+   <input class="initInputs" type="number" id="sizeInput" min="6" max="30" onchange="clampInputs()" value="20">
+   <br>
+   <label class="initInputs" for="mineInput">Mines:</label>
+   <input class="initInputs" type="number" id="mineInput" min="10" max="99" onchange="clampInputs()" value="60">
+  </body>
+</html>
